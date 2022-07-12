@@ -14,7 +14,7 @@ namespace ReadFiles
             try
             {
                 string[] userlines = File.ReadAllLines(@"C:\Lillian\Twitter_Feed\user.txt");
-                Console.WriteLine("Users");
+                Console.WriteLine("------ Users File -------");
                 Console.WriteLine("\n");
 
                 foreach (var user in userlines)
@@ -22,8 +22,9 @@ namespace ReadFiles
                     var results = user.Split(' ');
                     Array.ForEach(results, Console.WriteLine);
                     Array.Sort(results);
+
                 }
-                
+
             }
             catch (Exception e)
             {
@@ -33,7 +34,7 @@ namespace ReadFiles
             try
             {
                 Console.WriteLine("\n");
-                Console.WriteLine("Tweets");
+                Console.WriteLine("------ Tweets File -------");
                 Console.WriteLine("\n");
                 string[] tweetlines = File.ReadAllLines(@"C:\Lillian\Twitter_Feed\tweet.txt");
                 //string user = File.ReadLine(@"C:\Lillian\Twitter_Feed\user.txt");
