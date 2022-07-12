@@ -8,21 +8,32 @@ using System.Threading.Tasks;
 namespace ReadFiles
 {
      class Program
-    {
-            static void Main()
+     {
+        static void Main()
+        {
+            try
             {
                 string[] userlines = File.ReadAllLines(@"C:\Lillian\Twitter_Feed\user.txt");
                 Console.WriteLine("Users");
                 Console.WriteLine("\n");
 
-            foreach (var user in userlines)
-            {
-                Console.WriteLine(user);   
-                
-            }
-            Array.Sort(userlines);
+                foreach (var user in userlines)
+                {
 
-            Console.WriteLine("\n");
+                    user.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
+                    Console.WriteLine(user);
+                }
+                Array.Sort(userlines);
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+            try
+            {
+                Console.WriteLine("\n");
                 Console.WriteLine("Tweets");
                 Console.WriteLine("\n");
                 string[] tweetlines = File.ReadAllLines(@"C:\Lillian\Twitter_Feed\tweet.txt");
@@ -30,16 +41,21 @@ namespace ReadFiles
                 foreach (string line in tweetlines)
                 {
                     // Use a tab to indent each line of the file.
-               
-                        string newline = line.Replace('>', ':');
-                        Console.WriteLine("\t" + "@" + newline);
+
+                    string newline = line.Replace('>', ':');
+                    Console.WriteLine("\t" + "@" + newline);
                     Array.Sort(tweetlines);
                 }
 
-                    // Keep the console window open in debug mode.
-                    Console.WriteLine("Press any key to exit the console app.");
-                    System.Console.ReadKey();
+                // Keep the console window open in debug mode.
+                Console.WriteLine("Press any key to exit the console app.");
+                System.Console.ReadKey();
             }
-        }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }            
+      }
     }
 
