@@ -19,12 +19,11 @@ namespace ReadFiles
 
                 foreach (var user in userlines)
                 {
-
-                    user.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
-                    Console.WriteLine(user);
+                    var results = user.Split(' ');
+                    Array.ForEach(results, Console.WriteLine);
+                    Array.Sort(results);
                 }
-                Array.Sort(userlines);
-
+                
             }
             catch (Exception e)
             {
@@ -37,16 +36,16 @@ namespace ReadFiles
                 Console.WriteLine("Tweets");
                 Console.WriteLine("\n");
                 string[] tweetlines = File.ReadAllLines(@"C:\Lillian\Twitter_Feed\tweet.txt");
+                //string user = File.ReadLine(@"C:\Lillian\Twitter_Feed\user.txt");
 
-                foreach (string line in tweetlines)
-                {
-                    // Use a tab to indent each line of the file.
-
+                 foreach (string line in tweetlines)
+                 {
+                    //Format the tweets
                     string newline = line.Replace('>', ':');
                     Console.WriteLine("\t" + "@" + newline);
                     Array.Sort(tweetlines);
-                }
-
+                 }
+            
                 // Keep the console window open in debug mode.
                 Console.WriteLine("Press any key to exit the console app.");
                 System.Console.ReadKey();
