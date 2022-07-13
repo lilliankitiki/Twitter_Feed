@@ -11,5 +11,7 @@ namespace ReadFiles
         public User Tweeter { get; set; }
 
         public string Message { get; set; }
+
+        public DateTime DateCreated { get; set; } = DateTime.Now;
     }
 }

@@ -12,8 +12,6 @@ namespace ReadFiles
 
         public List<Tweet> Tweets { get; set; } = new List<Tweet>();
 
-        public List<User> Following { get; set; }
-
-        public List<User> Followers { get; set; }
+        public List<User> Following { get; set; } = new List<User>();
     }
 }

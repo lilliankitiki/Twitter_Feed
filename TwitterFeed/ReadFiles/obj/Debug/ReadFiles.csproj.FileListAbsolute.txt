@@ -14,3 +14,11 @@ C:\Lillian\Twitter_Feed\TwitterFeed\ReadFiles\obj\Debug\ReadFiles.csproj.Suggest
 C:\Lillian\Twitter_Feed\TwitterFeed\ReadFiles\obj\Debug\ReadFiles.csproj.CoreCompileInputs.cache
 C:\Lillian\Twitter_Feed\TwitterFeed\ReadFiles\obj\Debug\ReadFiles.exe
 C:\Lillian\Twitter_Feed\TwitterFeed\ReadFiles\obj\Debug\ReadFiles.pdb
+C:\Development\Other\Lillian\Twitter_Feed\TwitterFeed\ReadFiles\bin\Debug\ReadFiles.exe.config
+C:\Development\Other\Lillian\Twitter_Feed\TwitterFeed\ReadFiles\bin\Debug\ReadFiles.exe
+C:\Development\Other\Lillian\Twitter_Feed\TwitterFeed\ReadFiles\bin\Debug\ReadFiles.pdb
+C:\Development\Other\Lillian\Twitter_Feed\TwitterFeed\ReadFiles\obj\Debug\ReadFiles.csproj.AssemblyReference.cache
+C:\Development\Other\Lillian\Twitter_Feed\TwitterFeed\ReadFiles\obj\Debug\ReadFiles.csproj.SuggestedBindingRedirects.cache
+C:\Development\Other\Lillian\Twitter_Feed\TwitterFeed\ReadFiles\obj\Debug\ReadFiles.csproj.CoreCompileInputs.cache
+C:\Development\Other\Lillian\Twitter_Feed\TwitterFeed\ReadFiles\obj\Debug\ReadFiles.exe
+C:\Development\Other\Lillian\Twitter_Feed\TwitterFeed\ReadFiles\obj\Debug\ReadFiles.pdb

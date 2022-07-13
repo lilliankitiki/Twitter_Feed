@@ -1,1 +1,1 @@
-Error: Index was outside the bounds of the array.
+Error:    at ReadFiles.TweeterFeedHandler.GetTweeterUsersFromFile(String path) in C:\Development\Other\Lillian\Twitter_Feed\TwitterFeed\ReadFiles\TweeterFeedHandler.cs:line 31
